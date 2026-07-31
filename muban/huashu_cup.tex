@@ -1,0 +1,361 @@
+\documentclass[UTF8,12pt]{ctexart}
+\usepackage{multirow}
+\usepackage{array}
+\usepackage{titlesec} % 自定义标题格式和位置
+\usepackage{titling} % 自定义标题内容
+\usepackage{listings}
+\usepackage{xcolor} 
+\usepackage{graphicx}
+\usepackage{booktabs} %绘制表格
+\usepackage{geometry}
+\usepackage{array}
+\usepackage{amsmath}
+\usepackage{longtable}
+\usepackage{abstract}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{abstract}
+
+
+% 设置标题的格式
+\pretitle{\begin{center}\LARGE}
+	\posttitle{\end{center}}
+\preauthor{\begin{center}\large}
+	\postauthor{\end{center}}
+\predate{\begin{center}\large}
+	\postdate{\end{center}}
+
+
+
+\setlength{\absleftindent}{0pt}
+\setlength{\absrightindent}{0pt}
+
+\pagestyle{plain} %页眉消失
+
+\geometry{a4paper,left=1.5cm,right=1.5cm,top=2.5cm,bottom=2.5cm}
+\lstset{
+	numbers=left, %设置行号位置
+	numberstyle=\tiny, %设置行号大小
+	keywordstyle=\color{blue}, %设置关键字颜色
+	commentstyle=\color[cmyk]{1,0,1,0}, %设置注释颜色
+	escapeinside=``, %逃逸字符(1左面的键)，用于显示中文
+	breaklines, %自动折行
+	extendedchars=false, %解决代码跨页时，章节标题，页眉等汉字不显示的问题
+	xleftmargin=1em,xrightmargin=1em, aboveskip=1em, %设置边距
+	tabsize=4, %设置tab空格数
+	showspaces=false %不显示空格
+}
+
+% 定义MATLAB语言环境
+\lstdefinestyle{MATLAB}{
+	language=Matlab,
+	basicstyle=\ttfamily,
+	keywordstyle=\color{blue},
+	stringstyle=\color{red},
+	commentstyle=\color{green},
+	morecomment=[l][\color{magenta}]{\%},
+	showstringspaces=false,
+	numbers=left,
+	numberstyle=\tiny\color{gray},
+	stepnumber=1,
+	numbersep=10pt,
+	tabsize=4,
+	breaklines=true,
+	breakatwhitespace=true,
+	frame=single,
+	backgroundcolor=\color{white!10}, % 设置灰色背景
+	frameround=tttt,
+}
+
+
+% 定义Python语言环境
+\lstdefinestyle{Python}{
+	language=Python,
+	basicstyle=\ttfamily,
+	keywordstyle=\color{blue},
+	stringstyle=\color{red},
+	commentstyle=\color{green},
+	morecomment=[s][\color{magenta}]{@}{\ },
+	showstringspaces=false,
+	numbers=left,
+	numberstyle=\tiny\color{gray},
+	stepnumber=1,
+	numbersep=10pt,
+	tabsize=4,
+	breaklines=true,
+	breakatwhitespace=true,
+	frame=single,
+	backgroundcolor=\color{white!10}, % 设置灰色背景
+	frameround=tttt,
+	literate=%
+	{Ö}{{\"O}}1
+	{Ä}{{\"A}}1
+	{Ü}{{\"U}}1
+	{ß}{{\ss}}1
+	{ä}{{\"a}}1
+	{ö}{{\"o}}1
+	{ü}{{\"u}}1
+}
+
+
+\title{基于XXX模型的XXX研究}
+\date{}
+
+
+\begin{document}
+	
+	\begin{minipage}{\textwidth}
+		\centering
+		\renewcommand{\arraystretch}{1} % 调整行高
+		\begin{tabular}{|>{\centering\arraybackslash}m{3cm}|>{\centering\arraybackslash}m{10cm}|>{\centering\arraybackslash}m{2cm}|}
+			\hline
+			所属类别 & \multirow{2.7}{*}{\large\textbf{2024年“华数杯”全国大学生数学建模竞赛}} & 参赛编号 \\ \cline{1-1} \cline{3-3} 
+			\rule{0pt}{1.7em}本科组 & & \rule{0pt}{1.7em}CM2402692 \\ \hline
+		\end{tabular}
+		\renewcommand{\arraystretch}{1} % 恢复默认行高
+		
+		\vspace{-1em}
+		
+		\maketitle
+	\end{minipage}
+	
+	\vspace{-5em}
+	
+	\renewcommand{\abstractname}{\Large 摘要\\}
+	\begin{abstract}
+		\normalsize
+		
+		近年来，随着我国过境免签等政策的落实，越来越多的外国游客来到中国，并通过网络平台展示他们在华旅行的见闻，对我国旅游业发展、树立国家形象等均产生了较大的推动作用。本文利用\textbf{Python}和\textbf{excel}求解，对各个旅游城市进行了评价，并针对外国游客在中国境内的旅游需求，优化其旅游路线，努力提高其旅游体验。
+		
+		求解之前，先对数据进行预处理。首先，因为数据中有部分景区的名字产生了重复，我们将重复部分删去；接着，针对空白和"--"等评分数据，以及\textbf{箱线图}认为异常的数据，我们不将其纳入计算；同时，我们还根据问题的不同需要进行了归一化等处理。
+		
+		针对问题一，XXXXXXXXXXXXXXXXXX。
+		
+		针对问题二，XXXXXXXXXXXXXXXXXX。
+		
+		针对问题三，XXXXXXXXXXXXXXXXXX。
+		
+		针对问题四，XXXXXXXXXXXXXXXXXX。
+		
+		针对问题五，XXXXXXXXXXXXXXXXXX。
+		
+		
+		\textbf{关键词}：熵权TOPSIS法；单目标规划；Dijkstra算法；模拟退火；多目标规划
+	\end{abstract}
+	
+	\newpage
+	
+	
+	\section{问题重述}
+	
+	\subsection{问题背景}
+	
+	我是背景
+	
+	\subsection{要解决的问题}
+	
+	我是问题
+	
+	\section{问题分析}
+	
+	\subsection{问题一的分析}
+	
+	我是1
+	
+	\subsection{问题二的分析}
+	
+	我是2
+	
+	\subsection{问题三的分析}
+	
+	我是3
+	
+	\subsection{问题四的分析}
+	
+	我是4
+	
+	\subsection{问题五的分析}
+	
+	我是5
+	
+	
+	
+	\section{模型的假设}
+	
+	\begin{itemize}
+		
+		\item 我是假设1
+		\item 我是假设2
+		
+	\end{itemize}
+	
+	\section{符号说明}
+	\begin{longtable}[htbp]{p{8cm}<{\centering}p{7.5cm}}
+		\toprule  % 添加表格头部粗线
+		符号 & 意义 \\
+		\midrule  % 添加表格中横线
+		我是第一个符号 & 001 \\
+		我是第二个符号 & 002 \\
+		\bottomrule % 添加表格底部粗线
+	\end{longtable}
+	
+	
+	\section{模型的建立与求解}
+	
+	\subsection{问题一模型的建立与求解}
+	
+	我是1
+	
+	\begin{table}[htbp]
+		\centering
+		\caption{我是一个表格}
+		\begin{tabular}{c c c}
+			\hline
+			阿巴巴 & 阿巴巴 & 阿巴阿巴 \\
+			\hline
+			1 & 2 & 3\\
+			4 & 5 & 6\\  
+			\hline
+		\end{tabular}
+	\end{table}
+	
+	下面是一个公式：
+	
+	\begin{equation}
+		\mu_j = \frac{\sum_{i=1}^{n} r_{ij} x_i}{\sum_{i=1}^{n} r_{ij}}
+	\end{equation}
+	
+	\subsection{问题二模型的建立与求解}
+	
+	我是2
+	
+	\subsection{问题三模型的建立与求解}
+	
+	我是3
+	
+	\subsection{问题四模型的建立与求解}
+	
+	我是4
+	
+	\subsection{问题五模型的建立与求解}
+	
+	我是5
+	
+	
+	\section{模型的评价与推广}
+	
+	\subsection{模型的优缺点}
+	
+	\subsubsection{模型的优点}
+	
+	我是优点
+	
+	\subsubsection{模型的缺点}
+	
+	我是缺点
+	
+	\subsection{灵敏度分析}
+	
+	\subsubsection{熵权TOPSIS法的灵敏度分析}
+	
+	该方法一共考虑了景点平均评分等11项指标，通过将任意指标上调或下调适当比例，比较前后的评价结果，可以判断该方法的灵敏度。结果如下表所示：
+	
+	\begin{table}[htbp]
+		\centering
+		\caption{熵权TOPSIS法的灵敏度分析}
+		\begin{tabular}{c c c c c}
+			\hline
+			调整方式 & 排名第一的城市 & 相对接近度 & 排名第二的城市 & 相对接近度\\
+			\hline
+			不调整 & 佳木斯 & 0.607556 & 包头 & 0.607554\\
+			“美食”上调10\% & 佳木斯 & 0.607556 & 包头 & 0.607554\\ 
+			“收费”上调10\% & 佳木斯 & 0.607556 & 包头 & 0.607554\\ 
+			“公路里程”下调10\% & 佳木斯 & 0.607556 & 包头 & 0.607554\\ 
+			“人文底蕴”下调10\% & 佳木斯 & 0.607556 & 包头 & 0.607554\\
+			“人文底蕴”全部加上1 & 佳木斯 & 0.607556 & 包头 & 0.607554\\
+			\hline
+		\end{tabular}
+	\end{table}
+	
+	由表可知，对某项指标进行微调，熵权TOPSIS法选出的前两名城市没有发生变化；在相对接近度精确到小数点后六位的情况下，各城市对应的值几乎不发生变化，证明了模型有较强的稳定性。这得益于数据的标准化、指标间的独立性与指标的多样化。
+	
+	\subsubsection{目标函数中参数的灵敏度分析}
+	
+	路径规划时，通过网格搜索确定了目标函数中的参数。通过微调某些参数，比较前后路径规划结果的变化，最终可以得出结论：我们的规划模型具有较强的稳定性。
+	
+	问题三中，有$a_j$和$b_j$两个参数，且两个参数之和为1。因此，仅调整其中一个参数即可。结果如下表所示：
+	
+	\begin{table}[htbp]
+		\centering
+		\caption{问题三目标函数的灵敏度分析}
+		\begin{tabular}{c c c c}
+			\hline
+			调整方式 & 总时间 & 总费用 & 游览城市数量 \\
+			\hline
+			不调整 & 82.5 & 15850 & 8 \\
+			$a_j$上调10\% & 82.5 & 15850 & 8 \\
+			$a_j$下调10\% & 82.5 & 15850 & 8 \\
+			\hline
+		\end{tabular}
+	\end{table}
+	
+	由表可知，微调参数$a_j$，路线规划的结果没有发生变化，说明我们的模型具有稳定性。
+	
+	问题四中，有$\alpha$和$\beta$两个参数，且两个参数和为1，也是仅调整其中一个参数即可，结果如下：
+	
+	\begin{table}[htbp]
+		\centering
+		\caption{问题四目标函数的灵敏度分析}
+		\begin{tabular}{c c c c}
+			\hline
+			调整方式 & 总时间 & 总费用 & 游览城市数量 \\
+			\hline
+			不调整 & 78.5 & 12850 & 8 \\
+			$\alpha$上调10\% & 78.5 & 12850 & 8 \\
+			$\alpha$下调10\% & 80 & 12850 & 8 \\
+			\hline
+		\end{tabular}
+	\end{table}
+	
+	由表可知，略微上调参数$\alpha$，结果不变；略微下调，总时间增加了0.019\%，可以忽略不计，证明了模型具有稳定性。因为问题五使用的目标函数与问题四相同，所以不再进行灵敏度分析。
+	
+	
+	
+	\subsection{模型的改进与推广}
+	
+	我是改进
+
+	
+	\section{参考文献}
+	
+	\noindent [1] 王大锤等. (2012). 基于STM32的永动机设计
+	
+	\noindent [2] 李小明. (2012). 基于MSPM0的永动机设计
+	
+	\newpage
+	
+	\section{附录}
+	
+	PS：附录要另起一页（比赛的时候把这句删了）
+	
+	% 加粗并居中显示代码名字
+	\begin{center}
+		\textbf{问题一的MATLAB代码}
+	\end{center}
+	
+	\begin{lstlisting}[style=MATLAB]
+		disp("hello world");
+		
+	\end{lstlisting}
+	
+		% 加粗并居中显示代码名字
+	\begin{center}
+		\textbf{问题二的Python代码}
+	\end{center}
+	
+	\begin{lstlisting}[style=Python]
+		print("hello world")
+		
+	\end{lstlisting}
+	
+\end{document}

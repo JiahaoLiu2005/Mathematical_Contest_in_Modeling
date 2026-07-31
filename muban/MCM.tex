@@ -1,0 +1,280 @@
+\documentclass{mcmthesis}
+\mcmsetup{CTeX = false, 
+	tcn = 2428736, problem = E,   % 修改控制号和选题号
+	sheet = true, titleinsheet = true, keywordsinsheet = true,
+	titlepage = false, abstract = true}
+\usepackage{palatino}
+\usepackage{lipsum}
+\usepackage{amsmath}  % 此处引入数学公式的包
+\usepackage{graphicx} % 用于插入图片
+\usepackage{wrapfig}
+\usepackage{wallpaper}
+
+% 控制页 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 论文标题
+\title{The \LaTeX{} Template for MCM Version \MCMversion}  % 修改标题
+\date{\today}
+\usepackage{lastpage}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyfoot{}
+\fancyhead[L]{Page \thepage\ of \pageref{LastPage}}
+
+\begin{document}
+	\begin{abstract}
+		% 摘要部分
+		Here is the main abstract part. \\ Go to the next line.
+		% 关键词
+		\begin{keywords}  
+			keyword1; keyword2
+		\end{keywords}
+	\end{abstract}
+	
+	% 目录页 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\maketitle         % 控制序列
+	\tableofcontents   % 生成目录
+	\newpage
+	
+	% 基础用法 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	
+	% 标题 -----------------------------------------
+	\section{Basic usage of latex}
+	\subsection{This is a subsection (title)}
+	\subsubsection{This is a subsubsection}
+	\paragraph{Here is a paragraph.}Write some texts. \\ % 换行符
+	No indent.
+	
+	\subsection{This is unordered items}
+	% 无序符号----------------------------------------
+	\begin{itemize}
+		\item minimizes the discomfort to the hands, or
+		\item maximizes the outgoing velocity of the ball.
+	\end{itemize}
+	We focus exclusively on the second definition.
+	\begin{itemize}
+		\item the initial velocity and rotation of the ball,
+		\item the initial velocity and rotation of the bat,
+		\item the relative position and orientation of the bat and ball, and
+		\item the force over time that the hitter hands applies on the handle.
+	\end{itemize}
+	
+	% 数学公式和相关标签 ------------------------------
+	\subsection{Math formula}
+	% 行内公式
+	This is an inline formula. $a = \sqrt{b + c}$.
+	% 行间公式, 带编号
+	\begin{equation}
+		E = mc^2
+	\end{equation}
+	\begin{equation}
+		F = ma
+	\end{equation}
+	% 定理
+	\begin{Theorem} \label{thm:latex}
+		\LaTeX
+	\end{Theorem}
+	% 引理
+	\begin{Lemma} \label{thm:tex}
+		\TeX .
+	\end{Lemma}
+	% 证明
+	\begin{proof}
+		The proof of theorem.
+	\end{proof}
+	
+	% 图片 -------------------------------------------------------
+	\subsection{Picture} 
+	\subsubsection{Insert picture directly.}
+	
+	
+
+	
+	
+	
+	% 表格 -------------------------------------------------------
+	\subsection{Table}
+	
+	\subsubsection{Table-1}
+	\begin{tabular}{|l|c|r|}
+		\hline
+		OS & Release & Editor\\
+		\hline
+		Windows & MikTeX & TexMakerX \\
+		\hline
+		Unix/Linux & teTeX & Kile \\
+		\hline
+		Mac OS & MacTeX & TeXShop \\
+		\hline
+		General & TeX Live & TeXworks \\
+		\hline
+	\end{tabular}
+	
+	\subsubsection{Table-2}
+	\begin{tabular}{|r r|}
+		% r代表row, 使用 | 来划分，如果 r | r中间的|去掉，那么列之间元素无直线划分
+		\hline
+		1234 & 5678 \\ \hline
+		1 &  2 \\ \hline
+		3 & 4 \\ \hline
+	\end{tabular}
+	
+	\subsubsection{Table-3}
+	\begin{tabular}{ll}
+		\hline
+		symbols&definitions\\
+		\hline
+		$v_i$& velocity of ball before collision\\
+		$v_f$& velocity of ball after collision\\
+		$V_f$& velocity of bat after collision\\
+		$S$ & the shear modulus the bat\\
+		$Y$ & Young’s modulus of the bat\\
+		\hline
+	\end{tabular}
+	
+	% 文献引用 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\subsection{Cite}
+	Here is a example to cite the referenced article\cite{konishi:1999ab}. \\
+	Another article\cite{refName}.
+	
+	
+	\section{Analysis of the Problem}
+	\[
+	\begin{pmatrix}{*{20}c}
+		{a_{11} } & {a_{12} } & {a_{13} }  \\
+		{a_{21} } & {a_{22} } & {a_{23} }  \\
+		{a_{31} } & {a_{32} } & {a_{33} }  \\
+	\end{pmatrix}
+	= \frac{{Opposite}}{{Hypotenuse}}\cos ^{ - 1} \theta \arcsin \theta
+	\]
+	\lipsum[9]
+	
+	\[
+	p_{j}=\begin{cases} 0,&\text{if $j$ is odd}\\
+		r!\,(-1)^{j/2},&\text{if $j$ is even}
+	\end{cases}
+	\]
+	
+	\lipsum[10]
+	
+	\[
+	\arcsin \theta  =
+	\mathop{{\int\!\!\!\!\!\int\!\!\!\!\!\int}\mkern-31.2mu
+		\bigodot}\limits_\varphi
+	{\mathop {\lim }\limits_{x \to \infty } \frac{{n!}}{{r!\left( {n - r}
+				\right)!}}} \eqno (1)
+	\]
+	
+	\section{Calculating and Simplifying the Model  }
+	\lipsum[11]
+	
+	\section{The Model Results}
+	\lipsum[6]
+	
+	\section{Validating the Model}
+	\lipsum[9]
+	
+	\section{Conclusions}
+	\lipsum[6]
+	
+	\section{A Summary}
+	\lipsum[6]
+	
+	\section{Sensitivity Analysis}
+	\lipsum[6]
+	
+	\section{Evaluate of the Mode}
+	\lipsum[7]
+	
+	
+	\section{Strengths and weaknesses}
+	\lipsum[12]
+	
+	\subsection{Strengths}
+	\begin{itemize}
+		\item \textbf{Applies widely}\\
+		This  system can be used for many types of airplanes, and it also
+		solves the interference during  the procedure of the boarding
+		airplane,as described above we can get to the  optimization
+		boarding time.We also know that all the service is automate.
+	\end{itemize}
+	
+	\subsection{Weakness}
+	\begin{itemize}
+		\item \textbf{Improve the quality of the airport service}\\
+		Balancing the cost of the cost and the benefit, it will bring in
+		more convenient  for airport and passengers.It also saves many
+		human resources for the airline. 
+	\end{itemize}
+	\newpage
+	\section{Letter}
+	{\centering\section*{name of Letter}}
+	% 只在这页添加图片
+	\ThisCenterWallPaper{1}{images/letter_background1.png}
+	
+	\newcommand{\tnewroman}{\fontspec{Times New Roman}}
+	\newcommand{\adobegothicstdb}{\fontspec{Adobe Gothic Std B}}
+	\newcommand{\Centaur}{\fontspec{Centaur}}
+	
+	
+	\noindent\rule{\textwidth}{1pt}
+	
+	\vspace{-0.2cm}
+	
+	\noindent \ To: 
+	
+	\vspace{-0.2cm}
+	
+	\noindent \ From: Team \#2509651 of 2025 ICM
+	
+	\vspace{-0.2cm}
+	
+	\noindent \ Date: January 28, 2025
+	
+	\vspace{-0.2cm}
+	
+	\noindent \ Subject:
+	
+	\vspace{-0.4cm}
+	
+	\noindent\rule{\textwidth}{1pt}
+	
+	A randomly generated piece of English that has no real meaning. A randomly generated piece of English that has no real meaning. A randomly generated piece of English that has no real meaning. A randomly generated piece of English that has no real meaning. 
+	
+	
+	A randomly generated piece of English that has no real meaning. A randomly generated piece of English that has no real meaning. A randomly generated piece of English that has no real meaning. A randomly generated piece of English that has no real meaning. A randomly generated piece of English that has no real meaning. A randomly generated piece of English that has no real meaning. A randomly generated piece of English that has no real meaning. A randomly generated piece of English that has no real meaning. 
+	
+	
+	This part must be a bit of an unordered list or an ordered list or something like that, otherwise it's really all text and will look super ugly.
+	
+	
+	\begin{itemize}
+		\item Solution 1. \textbf{Build more shopping centers}. Explain solution1 explain solution1 explain solution1 explain solution1 explain solution1 explain solution1.
+		\item Solution 2. \textbf{Build more shopping centers}. Explain solution2 explain solution2 explain solution2 explain solution2.
+		\item Solution 3. \textbf{Build more shopping centers}. Explain solution3 explain solution3 explain solution3in solution1 explain solution1 explain solution1.
+		\item Solution 4. \textbf{Build more shopping centers}. Explain solution4 explain solution4 explain solution4 explain solution4 explain solution4 explain solution4 explain solution4.
+	\end{itemize}
+	
+	\vspace{-0.4cm}
+	
+	A part summarizes the words of the table above. Ura Ura Ura Ura Ura Ura Ura Ura. 
+	
+	
+	Conclusion. This part of writing conclusive things, one or two sentences to summarize it, do not write too much.
+	
+	
+	\newpage
+	
+	% 引用文献 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\newpage
+	\bibliography{article}      % 指定article 代表同目录下的article.bib文件 
+	\bibliographystyle{ieeetr}  % 定义文献引用的格式
+	
+	
+	% 附录 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\begin{appendices}
+		\section{First appendix}
+		\lipsum[13]
+		Here are simulation programmes we used in our model as follow.\\
+	\end{appendices}
+	\label{LastPage}
+\end{document}
