@@ -24,6 +24,7 @@
 - "Code - Time Series Forecasting"是时间序列预测问题的代码
 - "Code - Correlation and Consistency Analysis"是相关性分析和一致性分析的代码
 - "Code - Visualization"是数据可视化的代码
+- "Code - others"是其他可能用到的代码，比如疾病传播模型SEIR
 - 为了省事，这里代码文件的命名不太规范，自己写代码的时候注意一下
 
 **4.** “国赛答辩教程”文件夹是给数模国赛推荐国奖后的同学参考。省奖没有答辩，如果你做的很好有机会拿国一国二，被推荐上去，那就需要做PPT然后答辩（感谢 数学建模老哥 的资料）
