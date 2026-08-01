@@ -18,11 +18,12 @@
 
 **2.** muban文件夹是华数杯和美赛的latex模板。其中，huashu_cup.tex是华数杯模板，MCM.tex是美赛模板。如果使用美赛模板，并且你的美赛选题有一问是写信题，把images子文件夹与MCM.tex放在同一根目录，images子文件夹存放的是书信页的背景图片。如果没有写信题，严禁使用里面的letter_background背景
 
-**3.** 那几个 "Code - XXXXXXXX" 文件夹是部分常用模型的代码，都是用Python写的（作者严肃更新中）。比如：
+**3.** 那几个 "Code - XXXXXXXX" 文件夹是部分常用模型的代码，都是用Python写的（好多资料都找不到了，作者严肃更新中）。比如：
 
 - "Code - Classification and Clustering"是分类和聚类问题的代码
 - "Code - Evaluation and Decision"是评价决策类问题的代码
 - "Code - Regression Prediction"是回归预测类问题的代码（不含分类和时间序列预测问题）
+- "Code - Correlation and Consistency Analysis"是相关性分析和一致性分析的代码
 - 为了省事，这里代码文件的命名不太规范，自己写代码的时候注意一下
 
 **4.** “国赛答辩教程”文件夹是给数模国赛推荐国奖后的同学参考。省奖没有答辩，如果你做的很好有机会拿国一国二，被推荐上去，那就需要做PPT然后答辩（感谢 数学建模老哥 的资料）
