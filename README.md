@@ -23,6 +23,7 @@
 - "Code - Classification and Clustering"是分类和聚类问题的代码
 - "Code - Evaluation and Decision"是评价决策类问题的代码
 - "Code - Regression Prediction"是回归预测类问题的代码（不含分类和时间序列预测问题）
+- "Code - Time Series Forecasting"是时间序列预测问题的代码
 - "Code - Correlation and Consistency Analysis"是相关性分析和一致性分析的代码
 - 为了省事，这里代码文件的命名不太规范，自己写代码的时候注意一下
 
