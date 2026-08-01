@@ -14,13 +14,13 @@
 
 ## 项目介绍
 
-**1.** muban文件夹是华数杯和美赛的latex模板。其中，huashu_cup.tex是华数杯模板，MCM.tex是美赛模板。如果使用美赛模板，并且你的美赛选题有一问是写信题，把images子文件夹与MCM.tex放在同一根目录，images子文件夹存放的是书信页的背景图片。如果没有写信题，严禁使用里面的letter_background背景
+**1.** CUMCM文件夹是数模国赛的latex模板
 
-**2.** CUMCM文件夹是数模国赛的latex模板
+**2.** muban文件夹是华数杯和美赛的latex模板。其中，huashu_cup.tex是华数杯模板，MCM.tex是美赛模板。如果使用美赛模板，并且你的美赛选题有一问是写信题，把images子文件夹与MCM.tex放在同一根目录，images子文件夹存放的是书信页的背景图片。如果没有写信题，严禁使用里面的letter_background背景
 
-**2.** prompt.md是数模比赛的提示词，用于分析比赛题目（感谢 Tongyao Zhang 学姐的支持）
+**3.** prompt.md是数模比赛的提示词，用于分析比赛题目（感谢 Tongyao Zhang 学姐的支持）
 
-**3.** 煮波最近有点忙，模型代码将在10月前开源
+**4.** 煮波最近有点忙，模型代码将在10月前开源
 
 ## 其他经验
 
